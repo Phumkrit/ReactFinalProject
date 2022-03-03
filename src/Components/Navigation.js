@@ -20,6 +20,12 @@ function Navigation() {
                 <NavLink to='/resume' activeClassName='active'>Resume</NavLink>
             </li>
             <li className='nav-items'>
+                <NavLink to='/product' activeClassName='active'>Product</NavLink>
+            </li>
+            <li className='nav-items'>
+                <NavLink to='/cart' activeClassName='active'>Cart</NavLink>
+            </li>
+            <li className='nav-items'>
                 <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
             </li>
         </ul>

@@ -18,6 +18,7 @@ const GlobalStyle = createGlobalStyle `
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
+  
 }
 .dark-theme{
     --primary-color: #007bff;
@@ -36,6 +37,8 @@ const GlobalStyle = createGlobalStyle `
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
+   
+    
 }
 
 *{
@@ -91,6 +94,34 @@ span{
     }
   }
 
+  .myphoto{
+      width: 30%;
+  }
+
+  .flexbox-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.v1{
+    border-left: 1px solid;
+    height: 500px; 
+    padding-left: 10rem;
+}
+
+.desc{
+    color: black;
+}
+
+.vertical-timeline-element-title{
+    color: black;
+
+}
+
+.vertical-timeline-element-subtitle{
+    color: black;
+}
 `;
 
 export default GlobalStyle;
