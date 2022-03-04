@@ -1,44 +1,54 @@
-import React from 'react'
-import styled from 'styled-components'
-import { NavLink } from 'react-router-dom';
-import avatar from '../Img/Portrait2.jpg';
+import React from "react";
+import styled from "styled-components";
+import { NavLink } from "react-router-dom";
+import avatar from "../Img/Portrait2.jpg";
 
 function Navigation() {
   return (
     <NavigationStyled>
-        <div className='avatar'>
-            <img src={avatar} alt=''/>
-        </div>
-        <ul className='nav-items'>
-            <li className='nav-items'>
-                <NavLink to='/' exact activeClassName='active'>Home</NavLink>
-            </li>
-            <li className='nav-items'>
-                <NavLink to='/about' activeClassName='active'>About</NavLink>
-            </li>
-            <li className='nav-items'>
-                <NavLink to='/resume' activeClassName='active'>Resume</NavLink>
-            </li>
-            <li className='nav-items'>
-                <NavLink to='/product' activeClassName='active'>Product</NavLink>
-            </li>
-            <li className='nav-items'>
-                <NavLink to='/cart' activeClassName='active'>Cart</NavLink>
-            </li>
-            <li className='nav-items'>
-                <NavLink to='/contact' activeClassName='active'>Contact</NavLink>
-            </li>
-        </ul>
-        <footer className='footer'>
-            <p>
-               @2022 Phumkrit 
-            </p>
-        </footer>
+      <div className="avatar">
+        <img src={avatar} alt="" />
+      </div>
+      <ul className="nav-items">
+        <li className="nav-items">
+          <NavLink to="/" exact activeClassName="active">
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-items">
+          <NavLink to="/about" activeClassName="active">
+            About
+          </NavLink>
+        </li>
+        <li className="nav-items">
+          <NavLink to="/resume" activeClassName="active">
+            Resume
+          </NavLink>
+        </li>
+        <li className="nav-items">
+          <NavLink to="/product" activeClassName="active">
+            Product
+          </NavLink>
+        </li>
+        <li className="nav-items">
+          <NavLink to="/cart" activeClassName="active">
+            Cart
+          </NavLink>
+        </li>
+        <li className="nav-items">
+          <NavLink to="/contact" activeClassName="active">
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+      <footer className="footer">
+        <p>@2022 Phumkrit</p>
+      </footer>
     </NavigationStyled>
-  )
+  );
 }
 
-const NavigationStyled = styled.nav `
+const NavigationStyled = styled.nav`
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -51,7 +61,7 @@ const NavigationStyled = styled.nav `
 
     .avatar{
         width:100;
-        border-bottom:1 px solid var(--border-color);
+        border-bottom: 1px solid var(--border-color);
         text-align: center;
         padding 2rem 0;
         img{
@@ -108,6 +118,7 @@ const NavigationStyled = styled.nav `
             text-align: center;
         }
     }
-`
+    
+`;
 
-export default Navigation
+export default Navigation;

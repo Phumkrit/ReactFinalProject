@@ -1,6 +1,6 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle ` 
+const GlobalStyle = createGlobalStyle` 
 .light-theme{
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
@@ -121,6 +121,62 @@ span{
 
 .vertical-timeline-element-subtitle{
     color: black;
+}
+
+.Progress{
+    width: 70%;
+    padding-bottom: 50px;
+    
+}
+.center{
+  padding-top: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+.lebel{
+    padding: 0 10 0 10;
+    font-size: 22px;
+}
+  
+}
+.row{
+    flex-direction: initial;
+    align-items: center;
+    .left-content{
+        margin-right: 67rem;
+        font-size: 22px;
+    }
+  
+    .mid{
+      font-size: 22px;
+      
+    }
+    .right{
+        margin-left: 67rem;
+        font-size: 22px;
+    }
+  }
+.cirpro{
+    width: 20%;
+    padding-top: 20px;
+    margin: 50px;
+    font-size: 16px;
+}
+
+.center-row{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.title-skills{
+    padding-bottom: 50px;
+}
+
+.Progressbar{
+    margin-top: 60px;
 }
 `;
 
