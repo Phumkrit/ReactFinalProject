@@ -178,6 +178,10 @@ span{
 .Progressbar{
     margin-top: 60px;
 }
+
+.coverletter{
+    width: 85%;
+}
 `;
 
 export default GlobalStyle;
