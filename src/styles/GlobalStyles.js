@@ -182,6 +182,20 @@ span{
 .coverletter{
     width: 85%;
 }
+
+
+
+.card:Hover{
+    filter: drop-shadow(30px 10px 4px #2031FF);
+}
+
+.cardgithub:Hover{
+    filter: drop-shadow(30px 10px 4px #4444dd);
+}
+
+.cardline:Hover{
+    filter: drop-shadow(30px 10px 4px #20FF20);
+}
 `;
 
 export default GlobalStyle;
