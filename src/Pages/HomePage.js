@@ -18,17 +18,6 @@ const HomePage = () => {
           eraseDelay={200}
           className="typingeffect"
         />
-        <div className="icons">
-          <div className="icon i-facebook">
-            <FacebookIcon />
-          </div>
-          <div className="icon i-gitHubIcon">
-            <GitHubIcon />
-          </div>
-          <div className="icon i-youtube">
-            <YoutubeIcon />
-          </div>
-        </div>
       </div>
     </HomePageStyled>
   );

@@ -4,7 +4,8 @@ import { InnerLayout, MainLayout } from "../styles/Layout";
 import ProgressBar from "@ramonak/react-progress-bar";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
-import VerticaltimelineElementschool from "../VerticaltimelineElementschool";
+
+import timelineElements from "../timelineElements";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -24,8 +25,9 @@ const Resume = () => {
       <InnerLayout>
         <Title title={"Resume"} span={"Resume"}></Title>
       </InnerLayout>
+
       <VerticalTimeline>
-        {VerticaltimelineElementschool.map((element) => {
+        {timelineElements.map((element) => {
           let isWorkIcon = element.icon === "work";
           let showButton =
             element.buttonText !== undefined &&
@@ -41,9 +43,12 @@ const Resume = () => {
               <h3 className="vertical-timeline-element-title">
                 {element.title}
               </h3>
-              <h3 className="vertical-timeline-element-subtitle">
+              <h5 className="vertical-timeline-element-subtitle">
                 {element.location}
-              </h3>
+              </h5>
+              <p className="desc" id="description">
+                {element.description}
+              </p>
               {showButton && (
                 <a
                   className={`button ${
@@ -59,7 +64,12 @@ const Resume = () => {
         })}
       </VerticalTimeline>
 
-      <Title title={"Programing Language"} span={"Programing Language"}></Title>
+      <InnerLayout>
+        <Title
+          title={"Programing Language"}
+          span={"Programing Language"}
+        ></Title>
+      </InnerLayout>
       <div className="Progressbar">
         <div className="center">
           <p className="lebel">Bad</p>
@@ -167,8 +177,9 @@ const Resume = () => {
           <p className="lebel">Good</p>
         </div>
       </div>
-
-      <Title title={"Software Skills"} span={"Software Skills"}></Title>
+      <InnerLayout>
+        <Title title={"Software Skills"} span={"Software Skills"}></Title>
+      </InnerLayout>
       <div className="center-row">
         <CircularProgressbar
           className="cirpro"

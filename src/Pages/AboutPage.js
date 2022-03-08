@@ -2,12 +2,12 @@ import React from "react";
 import Title from "../Components/Title";
 import { InnerLayout, MainLayout, Right, BottomLayout } from "../styles/Layout";
 import avatar from "../Img/Portrait2.jpg";
-
-import timelineElements from "../timelineElements";
+import VerticaltimelineElementschool from "../VerticaltimelineElementschool";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+
 import "react-vertical-timeline-component/style.min.css";
 
 const AboutPage = () => {
@@ -47,10 +47,10 @@ const AboutPage = () => {
         </div>
 
         <BottomLayout>
-          <Title title={"My experience"} span={"My experience"}></Title>
+          <Title title={"Education"} span={"Education"}></Title>
         </BottomLayout>
         <VerticalTimeline>
-          {timelineElements.map((element) => {
+          {VerticaltimelineElementschool.map((element) => {
             let isWorkIcon = element.icon === "work";
             let showButton =
               element.buttonText !== undefined &&
@@ -66,12 +66,9 @@ const AboutPage = () => {
                 <h3 className="vertical-timeline-element-title">
                   {element.title}
                 </h3>
-                <h5 className="vertical-timeline-element-subtitle">
+                <h3 className="vertical-timeline-element-subtitle">
                   {element.location}
-                </h5>
-                <p className="desc" id="description">
-                  {element.description}
-                </p>
+                </h3>
                 {showButton && (
                   <a
                     className={`button ${

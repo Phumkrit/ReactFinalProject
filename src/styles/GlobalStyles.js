@@ -5,10 +5,10 @@ const GlobalStyle = createGlobalStyle`
     --primary-color: #007bff;
     --primary-color-light: #057FFF;
     --secondary-color: #ff7675;
-    --background-dark-color: #F1F1F1;
+    --background-dark-color: #C6C6C6;
     --background-dark-grey: #e4e4e4;
     --border-color: #cbced8;
-    --background-light-color: #F1F1F1;
+    --background-light-color: #C6C6C6;
     --background-light-color-2: rgba(3,127,255,.3);
     --white-color: #151515;
     --font-light-color: #313131;
@@ -196,6 +196,10 @@ span{
 .cardline:Hover{
     filter: drop-shadow(30px 10px 4px #20FF20);
 }
+
+.buybutt:hover {
+    filter: drop-shadow(10px 1px 6px black);
+  }
 `;
 
 export default GlobalStyle;
